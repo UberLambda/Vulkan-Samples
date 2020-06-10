@@ -86,7 +86,7 @@ const std::vector<VkQueueFamilyProperties> &PhysicalDevice::get_queue_family_pro
 	return queue_family_properties;
 }
 
-VkPhysicalDeviceFeatures &PhysicalDevice::get_mutable_requested_features()
+const VkPhysicalDeviceFeatures PhysicalDevice::get_requested_features() const
 {
 	return requested_features;
 }
