@@ -382,6 +382,6 @@ float GlfwWindow::get_content_scale_factor() const
 	// but non-uniform scaling is very unlikely, and would
 	// require significantly more changes in the IMGUI integration
 	return static_cast<float>(win_width) / fb_width;
- }
+}
 
 }        // namespace vkb
