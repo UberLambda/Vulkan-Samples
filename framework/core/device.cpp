@@ -132,7 +132,7 @@ Device::Device(const PhysicalDevice &gpu, VkSurfaceKHR surface, std::unordered_m
 	create_info.ppEnabledExtensionNames = enabled_extensions.data();
 
 	const auto requested_gpu_features = gpu.get_requested_features();
-	create_info.pEnabledFeatures = &requested_gpu_features;
+	create_info.pEnabledFeatures      = &requested_gpu_features;
 
 	VkResult result = vkCreateDevice(gpu.get_handle(), &create_info, nullptr, &handle);
 
